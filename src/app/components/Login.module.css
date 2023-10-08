@@ -1,0 +1,70 @@
+.parent {
+    background-color: black;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 9px;  /* 圆角 */
+}
+
+.title {
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-variant-ligatures: normal;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    height: 100px;
+    text-align: center;
+}
+
+.title span {
+
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* 调整样式，使元素之间有一些间距 */
+.loginform {
+    padding: 15px;
+    margin-right: 5px;
+}
+
+.loginform span {
+    text-align: left;    /* 文本靠左 */
+    width: 80px;    /* 可以根据需要调整宽度 */
+
+}
+
+/* 使用flex属性来自动调整输入框宽度 */
+.loginform input[type="text"],
+.loginform input[type="password"] {
+    border: solid 1px rgb(4, 46, 54);
+    color: black;   /*输入的字的颜色 */
+    flex: 1;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 50;
+    border-radius: 5px;
+}
+
+.loginbtn {
+    float: left;
+    height: 100px;
+    /* position:relative; */
+    width: 150px;
+    left: 50px;
+}
+
+.signupbtn {
+    float: left;
+    height: 100px;
+    /* position:relative; */
+    width: 150px;
+    left: calc(50%);
+}
